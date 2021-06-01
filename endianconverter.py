@@ -2,7 +2,7 @@ import re
 import sys
 
 number = "".join(sys.argv[1:])
-number = re.sub('([\da-f-A-F]{2})' , r'.\1' , number)
+number = re.sub('([\da-fA-F]{2})' , r'.\1' , number)
 number = number.split(".")
 number.reverse()
 number = ("".join(number))
